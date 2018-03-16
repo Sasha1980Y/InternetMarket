@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FB115C5205A695800D58AF7 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB115C4205A695800D58AF7 /* AdminViewController.swift */; };
+		7FB115C7205AA22000D58AF7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB115C6205AA22000D58AF7 /* Helper.swift */; };
 		7FF3459B20567356009D6113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3459A20567356009D6113 /* AppDelegate.swift */; };
 		7FF3459D20567356009D6113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3459C20567356009D6113 /* ViewController.swift */; };
 		7FF345A020567356009D6113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF3459E20567356009D6113 /* Main.storyboard */; };
 		7FF345A220567356009D6113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FF345A120567356009D6113 /* Assets.xcassets */; };
 		7FF345A520567356009D6113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FF345A320567356009D6113 /* LaunchScreen.storyboard */; };
+		7FF345AD2056838B009D6113 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF345AC2056838B009D6113 /* Model.swift */; };
+		7FF345AF20568883009D6113 /* ModelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF345AE20568883009D6113 /* ModelCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FB115C4205A695800D58AF7 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
+		7FB115C6205AA22000D58AF7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7FF3459720567356009D6113 /* InternetMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF3459A20567356009D6113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FF3459C20567356009D6113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,8 @@
 		7FF345A120567356009D6113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FF345A420567356009D6113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FF345A620567356009D6113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF345AC2056838B009D6113 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7FF345AE20568883009D6113 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				7FF3459A20567356009D6113 /* AppDelegate.swift */,
+				7FF345AC2056838B009D6113 /* Model.swift */,
+				7FB115C6205AA22000D58AF7 /* Helper.swift */,
+				7FF345AE20568883009D6113 /* ModelCollectionViewCell.swift */,
 				7FF3459C20567356009D6113 /* ViewController.swift */,
+				7FB115C4205A695800D58AF7 /* AdminViewController.swift */,
 				7FF3459E20567356009D6113 /* Main.storyboard */,
 				7FF345A120567356009D6113 /* Assets.xcassets */,
 				7FF345A320567356009D6113 /* LaunchScreen.storyboard */,
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF345AF20568883009D6113 /* ModelCollectionViewCell.swift in Sources */,
+				7FF345AD2056838B009D6113 /* Model.swift in Sources */,
 				7FF3459D20567356009D6113 /* ViewController.swift in Sources */,
+				7FB115C5205A695800D58AF7 /* AdminViewController.swift in Sources */,
 				7FF3459B20567356009D6113 /* AppDelegate.swift in Sources */,
+				7FB115C7205AA22000D58AF7 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

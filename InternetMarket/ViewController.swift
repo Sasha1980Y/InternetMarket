@@ -18,12 +18,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         if Helper.isEmptyArrayOfModel == true {
             Helper.arrayThings = fillArray()
             Helper.isEmptyArrayOfModel = false
         } else {
-            
+            print("my error")
         }
+        
+        
+        Router.shared.downloadModel()
         
         /*
         let userDefault = UserDefaults.standard
@@ -44,14 +49,25 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        self.collectionView.reloadData()
+        //self.collectionView.reloadData()
         
         // add swipe from left
-        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeToRight))
-        self.view.addGestureRecognizer(gestureRecognizer)
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(swipeToRight))
+        swipeRight.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(swipeRight)
+        
+        
+        
+        
+        
+        //let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipeToRight))
+        //self.view.addGestureRecognizer(gestureRecognizer)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        
         
         // Show the navigation bar on other view controllers
         self.navigationController?.setNavigationBarHidden(true, animated: animated)

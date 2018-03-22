@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C1F27F31DD3845008DFB238 /* Pods_InternetMarket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9AB6E9EB23F1038BB11BADC /* Pods_InternetMarket.framework */; };
+		7F4264242063ABAE0032C7C9 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4264232063ABAE0032C7C9 /* Router.swift */; };
 		7FB115C5205A695800D58AF7 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB115C4205A695800D58AF7 /* AdminViewController.swift */; };
 		7FB115C7205AA22000D58AF7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB115C6205AA22000D58AF7 /* Helper.swift */; };
 		7FF3459B20567356009D6113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3459A20567356009D6113 /* AppDelegate.swift */; };
@@ -19,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C00EA48A1E6C28BB6633CD5 /* Pods-InternetMarket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternetMarket.release.xcconfig"; path = "Pods/Target Support Files/Pods-InternetMarket/Pods-InternetMarket.release.xcconfig"; sourceTree = "<group>"; };
+		5EEDD3555AB5816C0281FEAA /* Pods-InternetMarket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InternetMarket.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InternetMarket/Pods-InternetMarket.debug.xcconfig"; sourceTree = "<group>"; };
+		7F4264232063ABAE0032C7C9 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7F4264262063AF720032C7C9 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4264282063AF7D0032C7C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FB115C4205A695800D58AF7 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		7FB115C6205AA22000D58AF7 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		7FF3459720567356009D6113 /* InternetMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternetMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +37,7 @@
 		7FF345A620567356009D6113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FF345AC2056838B009D6113 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7FF345AE20568883009D6113 /* ModelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCollectionViewCell.swift; sourceTree = "<group>"; };
+		C9AB6E9EB23F1038BB11BADC /* Pods_InternetMarket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InternetMarket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C1F27F31DD3845008DFB238 /* Pods_InternetMarket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +57,8 @@
 			children = (
 				7FF3459920567356009D6113 /* InternetMarket */,
 				7FF3459820567356009D6113 /* Products */,
+				AE582628D2AC0F43510B3A3F /* Pods */,
+				DF1C28A8F45F88E30123AFC8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				7FF3459A20567356009D6113 /* AppDelegate.swift */,
+				7F4264232063ABAE0032C7C9 /* Router.swift */,
 				7FF345AC2056838B009D6113 /* Model.swift */,
 				7FB115C6205AA22000D58AF7 /* Helper.swift */,
 				7FF345AE20568883009D6113 /* ModelCollectionViewCell.swift */,
@@ -76,6 +88,25 @@
 			path = InternetMarket;
 			sourceTree = "<group>";
 		};
+		AE582628D2AC0F43510B3A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EEDD3555AB5816C0281FEAA /* Pods-InternetMarket.debug.xcconfig */,
+				0C00EA48A1E6C28BB6633CD5 /* Pods-InternetMarket.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF1C28A8F45F88E30123AFC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F4264282063AF7D0032C7C9 /* SwiftyJSON.framework */,
+				7F4264262063AF720032C7C9 /* Alamofire.framework */,
+				C9AB6E9EB23F1038BB11BADC /* Pods_InternetMarket.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FF345A920567356009D6113 /* Build configuration list for PBXNativeTarget "InternetMarket" */;
 			buildPhases = (
+				D35E89AAFE9F3F49EB9309F8 /* [CP] Check Pods Manifest.lock */,
 				7FF3459320567356009D6113 /* Sources */,
 				7FF3459420567356009D6113 /* Frameworks */,
 				7FF3459520567356009D6113 /* Resources */,
+				350B1C3BC5F3100577B10E87 /* [CP] Embed Pods Frameworks */,
+				00FD14501EAE689185F9C0E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -143,6 +177,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FD14501EAE689185F9C0E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InternetMarket/Pods-InternetMarket-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		350B1C3BC5F3100577B10E87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-InternetMarket/Pods-InternetMarket-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-InternetMarket/Pods-InternetMarket-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D35E89AAFE9F3F49EB9309F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InternetMarket-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FF3459320567356009D6113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +241,7 @@
 				7FF345AF20568883009D6113 /* ModelCollectionViewCell.swift in Sources */,
 				7FF345AD2056838B009D6113 /* Model.swift in Sources */,
 				7FF3459D20567356009D6113 /* ViewController.swift in Sources */,
+				7F4264242063ABAE0032C7C9 /* Router.swift in Sources */,
 				7FB115C5205A695800D58AF7 /* AdminViewController.swift in Sources */,
 				7FF3459B20567356009D6113 /* AppDelegate.swift in Sources */,
 				7FB115C7205AA22000D58AF7 /* Helper.swift in Sources */,
@@ -288,6 +379,7 @@
 		};
 		7FF345AA20567356009D6113 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EEDD3555AB5816C0281FEAA /* Pods-InternetMarket.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +395,7 @@
 		};
 		7FF345AB20567356009D6113 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C00EA48A1E6C28BB6633CD5 /* Pods-InternetMarket.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

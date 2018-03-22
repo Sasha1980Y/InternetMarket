@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct Model {  // Codable
-    var photo: UIImage
+    var photo: UIImage?
     var name: String
     var price: Int
     

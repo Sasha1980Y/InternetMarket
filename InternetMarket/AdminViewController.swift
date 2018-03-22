@@ -23,12 +23,11 @@ class AdminViewController: UIViewController, UIImagePickerControllerDelegate, UI
         modelTextField.returnKeyType = UIReturnKeyType.done
         priceTextField.returnKeyType = UIReturnKeyType.done
         
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        //self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     
@@ -67,8 +66,24 @@ class AdminViewController: UIViewController, UIImagePickerControllerDelegate, UI
     }
     
     @IBAction func saveBarButtonItem(_ sender: Any) {
-        performSegue(withIdentifier: "ViewController", sender: self)
+        
+        
+        let photo = imageTake.image //?? #imageLiteral(resourceName: "notImage")
+        let modelName = modelTextField.text ?? "Not Name"
+        var price: Int = 0
+        if let priceInt = Int(priceTextField.text!) {
+            price = priceInt
+        }
+        
+        Router.shared.requestWith(endUrl: "", parameters: [:], model: Model(photo: photo, name: modelName, price: price))
+        Helper.arrayThings.append(Model(photo: photo, name: modelName, price: price) )
+        navigationController?.popViewController(animated: true)
+        
+        
+        //performSegue(withIdentifier: "ViewController", sender: self)
     }
+    
+    
     // MARK: pass Model to array
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -76,7 +91,7 @@ class AdminViewController: UIViewController, UIImagePickerControllerDelegate, UI
             
             // rotate image with extension
             //let photo = imageTake.image?.rotated(by: Measurement(value: 90.0, unit: .degrees) ) ?? #imageLiteral(resourceName: "notImage")
-            let photo = imageTake.image ?? #imageLiteral(resourceName: "notImage")
+            let photo = imageTake.image //?? #imageLiteral(resourceName: "notImage")
             
             
             let modelName = modelTextField.text ?? "Not Name"
@@ -84,14 +99,23 @@ class AdminViewController: UIViewController, UIImagePickerControllerDelegate, UI
             if let priceInt = Int(priceTextField.text!) {
                 price = priceInt
             }
-            
+
             if segue.identifier == "ViewController"{
-                //var vc = segue.destination as! ViewController
+                // var vc = segue.destination as! ViewController
+                // requestWith(endUrl: "", imageData: nil, parameters: [:], dataImage: data)
+                //Router.shared.requestWith(endUrl: "", parameters: [:], model: Model(photo: photo, name: modelName, price: price ))
+                
                 Helper.arrayThings.append(Model(photo: photo, name: modelName, price: price) )
             }
             
         }
     }
+    @IBAction func backButton(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
 }
 
 extension AdminViewController: UITextFieldDelegate {
